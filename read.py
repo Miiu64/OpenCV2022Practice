@@ -1,15 +1,19 @@
-# = Actual Comment
-## = Line of code commented
+#imports cv2 but named as cv
+import cv2 as cv
 
-import cv2 as cv        #imports cv2 but named as cv
 
 #Reading images
 
-##img = cv.imread('Photos\City_Skyline.jpg')     #Reads an image in a path and returns it as a matrix of pixels
 
-##cv.imshow('City Skyline', img)             #Shows the image in a new window named after the paramter
+#Reads an image in a path and returns it as a matrix of pixels
+##img = cv.imread('Photos\City_Skyline.jpg')
 
-cv.waitKey(0)           #Waits an infinite amount of time for a key to pressed on a keyboard
+#Shows the image in a new window named after the paramter
+##cv.imshow('City Skyline', img)
+
+#Waits an infinite amount of time for a key to pressed on a keyboard
+cv.waitKey(0) 
+
 
 #Reading videos
 
