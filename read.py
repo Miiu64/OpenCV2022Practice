@@ -17,5 +17,22 @@ import cv2 as cv
 
 #Captures 0 for webcam, 1 for first camera, etc.
 #Also captures video in file path
-capture = cv.VideoCapture('Videos\Astronaut.gif')
+capture = cv.VideoCapture('Videos\Infinite_Loop.mp4')
+
+while True:
+    #reads video frame by frame, always returns true when the frame was successfully read
+    isTrue, frame = capture.read()
+    #Shows video frame by frame
+    cv.imshow('Video', frame)
+    
+    #Breaks the loop when 20 miliseconds and the letter d is pressed
+    if cv.waitKey(20) & 0xFF==ord('d'):
+        break
+
+#Releases capture device
+capture.release()
+#Destroys all Windows
+cv.destroyAllWindows()
+
+
 
