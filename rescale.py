@@ -14,7 +14,7 @@ def rescaleFrame(frame, scale=0.75):
     #Creates a table with the scaled width and height
     dimensions = (width, height)
     
-    #Returns the frame resized into a particular dimension
+    #Returns the frame resized into a particular dimension, 
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
 

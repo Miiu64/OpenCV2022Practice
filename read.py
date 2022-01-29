@@ -5,7 +5,7 @@ import cv2 as cv
 #Reading images
 
 
-#Reads an image in a path and returns it as a matrix of pixels
+# #Reads an image in a path and returns it as a matrix of pixels
 img = cv.imread('Photos\City_Skyline.jpg')
 
 #Shows the image in a new window named after the paramter
